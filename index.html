@@ -3,30 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Online Resume</title>
+    <title>Jonathan Barnard | Online Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Your Job Title</p>
+        <h1>Jonathan Barnard</h1>
+        <p class="job-title">Specialist, Server & Cloud Infrastructure</p>
+        <div class="contact-info">
+            <a href="mailto:jony67@live.com">jony67@live.com</a> |
+            <a href="https://www.linkedin.com/in/jonathan-barnard-9059aa107">LinkedIn</a> |
+            <a href="https://github.com/Th3Sh3ll">GitHub</a>
+        </div>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Brief introduction about yourself.</p>
-    </section>
-    <section>
-        <h2>Work Experience</h2>
-        <!-- Add your experience here -->
-    </section>
-    <section>
-        <h2>Skills</h2>
-        <!-- List your skills here -->
-    </section>
-    <section>
-        <h2>Education</h2>
-        <!-- Add education details here -->
-    </section>
-    <!-- Add more sections as needed -->
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Passionate, analytical, and highly skilled DevOps professional specializing in automation, infrastructure, and reliability engineering. Eager to contribute to a dynamic team by developing and optimizing tools that enhance system automation and efficiency, leveraging expertise in PowerShell, Python (Flask), and monitoring technologies like Grafana, InfluxDB, and Prometheus.</p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <h3>Devops Engineer at DigiOutsource</h3>
+                <p class="date">2021 - February 2024</p>
+                <ul>
+                    <li><strong>Data Cluster Management:</strong> Set up, manage, and troubleshoot clusters for Elasticsearch, Kafka, and RabbitMQ, ensuring high availability and performance.</li>
+                    <li><strong>Dashboard Development:</strong> Developed and maintained Grafana dashboards linked to data sources like InfluxDB, Prometheus, and Elasticsearch to improve visibility into system health.</li>
+                    <li><strong>Automation Tools:</strong> Created and optimized tools with PowerShell, Ansible, and Python/Flask to automate routine tasks, enhancing operational efficiency and reducing errors.</li>
+                    <li><strong>Self-Service Portal:</strong> Built a self-service portal (HTML, CSS, jQuery, Flask, MySQL) that empowers team members to independently manage application pools, Windows services, and internal diagnostics, resulting in a 30% reduction in support requests.</li>
+                    <li><strong>CI/CD Management:</strong> Utilized GitLab for CI/CD, enabling rapid and reliable deployment pipelines and improving deployment consistency across environments.</li>
+                    <li><strong>Notable Projects:</strong></li>
+                    <ul>
+                        <li>Elasticsearch Patching: Developed an Ansible playbook to automate patching of Elasticsearch nodes across environments.</li>
+                        <li>Log4j Remediation Tool: Designed a PowerShell script to scan and remove vulnerable Log4j classes across multiple servers.</li>
+                        <li>Event Driven Automation: Designed and implemented a route in flask that will listen for a webhook post from Grafana Alerting and action a pipeline in Gitlab to autoheal a service based off thresholds in Grafana</li>
+                        <li>Onboarding/Offboarding Employees: Powershell scripting to action tasks submitted from HR in Workday to create new user accounts with mailboxes or to disable user accounts on last day of work.</li>
+                    </ul>
+                </ul>
+            </div>
+            <h3>Prior Roles at DigiOutsource</h3>
+            <div class="job">
+                <h3>Intermediate System Administrator</h3>
+                <p class="date">2018 - 2021</p>
+                <ul>
+                    <li>Managed virtual server builds and migrations on Hyper-V, implemented backup strategies with Veeam, and configured high-availability clusters.</li>
+                    <li>Developed PowerShell scripts for Active Directory, DNS, and Exchange automation, reducing manual administration time by 25%.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>IT Support Team Lead</h3>
+                <p class="date">2017 - 2018</p>
+                <ul>
+                    <li>Spearheaded process improvements in support operations, enhancing team efficiency and response times.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>IT Support Agent</h3>
+                <p class="date">2016 - 2017</p>
+                <ul>
+                    <li>Provided multi-shift support for internal applications, Windows troubleshooting, and network issues.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li>Automation & Scripting | PowerShell (advanced), Ansible, Python (Flask, scripting)</li>
+                <li>Monitoring & Metrics   | Grafana, InfluxDB, Prometheus, ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                <li>Infrastructure & CI/CD | GitLab CI/CD, Hyper-V, Failover Cluster Manager</li>
+                <li>Cloud & Containers | Azure (AZ-900, AZ-104), Docker, Kubernetes (basic)</li>
+                <li>Database & Messaging | MySQL, Kafka, RabbitMQ</li>
+                <li>Systems & Administration | Active Directory, Exchange, Veeam Backup & Replication, DNS, DHCP, Windows/Linux Server Administration</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education">
+                <p class="date">Graduation Year: 2006</p>
+                <ul>
+                    <li>CTI | Diploma in IT Engineering, Cape Town</li>
+                </ul>
+                <h3>Selft Study</h3>
+                 <ul>
+                    <li>AZ-104: Microsoft Azure Administrator - Self-study, 2022</li>
+                    <li>AZ-900: Microsoft Azure Fundamentals - Self-study, 2021</li>
+                    <li>MCSA: Microsoft Certified Solutions Associate - Self-study, 2019</li>
+                 </ul>
+            </div>
+            <!-- Add more education details as needed -->
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li><strong>Project Name:</strong> Brief description of the project, technologies used, and outcomes.</li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
